@@ -44,6 +44,18 @@ spec:
   system: purchasing
 
 ---
+
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: inventory-db
+  description: Stores Inventory details
+spec:
+  type: database
+  owner: ecommercee
+  system: purchasing
+
+---
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
