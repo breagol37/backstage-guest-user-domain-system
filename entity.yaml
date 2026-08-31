@@ -39,7 +39,7 @@ metadata:
   name: inventory
 spec:
   dependsOn:
-    - "resource-inventory-db"
+    - "resource:inventory-db"
   type: service
   lifecycle: production
   owner: ecommerce
@@ -54,7 +54,7 @@ metadata:
   description: Stores Inventory details
 spec:
   type: database
-  owner: ecommercee
+  owner: ecommerce
   system: purchasing
 
 ---
