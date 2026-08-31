@@ -2,9 +2,21 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: shopping-cart
-  description: Some description of the component-name component
 spec:
+  dependsOn:
+    - component: inventory
   type: website
+  lifecycle: production
+  owner: user:chris
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: inventory
+spec:
+  type: service
   lifecycle: production
   owner: ecommerce
 
@@ -22,6 +34,6 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: dave
+  name: chris
 spec:
   memberOf: [ecommerce]
