@@ -38,6 +38,8 @@ kind: Component
 metadata:
   name: inventory
 spec:
+  dependsOn:
+    - "resource-inventory-db"
   type: service
   lifecycle: production
   owner: ecommerce
