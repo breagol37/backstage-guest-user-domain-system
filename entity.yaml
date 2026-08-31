@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: shopping-cart
+  description: Some description of the component-name component
+spec:
+  type: website
+  lifecycle: production
+  owner: guests
