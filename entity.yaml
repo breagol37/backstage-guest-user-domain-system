@@ -3,6 +3,7 @@ kind: Domain
 metadata:
   name: shopping-app
   description: Handles everything in the ecommerce portion of the buisness
+spec:
   owner: ecommerce
 
 ---
